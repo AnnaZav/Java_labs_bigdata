@@ -1,0 +1,9 @@
+Path input_file = Paths.get("src/lab5/p3/file.txt");
+Path out_file = Paths.get("src/lab5/p3/pushkin_out.txt"); List<String> text = new ArrayList<>();
+List<String> result = new ArrayList<>();
+try {
+text = Files.readAllLines(input_file, StandardCharsets.UTF_8);
+for (String line : text)
+System.out.println(line); } catch (Exception e){
+System.out.println(e.getMessage());
+}
